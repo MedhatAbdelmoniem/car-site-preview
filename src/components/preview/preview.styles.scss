@@ -1,0 +1,65 @@
+.preview {
+    margin-bottom: 25px;
+
+    div{
+        justify-content: center;
+        display: flex;
+    
+        .Vline {
+            border-left: 2px solid;
+        }
+    
+        button {
+            border: none;
+            background: none;
+            color: white;
+            padding: 20px 20px;
+            font-size: 2vw;
+    
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    
+        div {
+            position: relative;
+    
+            div {
+                border: white 1px solid;
+                border-radius: 10px;
+                height: 40vh;
+                width: 30vw;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+.arrow {
+    width: 2vw;
+    height: 5vh;
+    background-color: white;
+    display: inline-block;
+    padding: 3px;
+    position: absolute;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+    }
+  }
+  
+  .right {
+    clip-path: polygon(0 0, 100% 50%, 0 100%); 
+    right: 30vw;
+    top: 85vh;
+  }
+  
+  .left {
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    top: 85vh;
+    left: 30vw;
+  }  

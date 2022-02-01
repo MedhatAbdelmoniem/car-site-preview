@@ -1,0 +1,54 @@
+.hero {
+    background-image: url('../../assets/hero.png');
+    width: 95vw;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    position: relative;
+
+
+    h1 {
+        position: absolute;
+        font-size: 5vh;
+        left: 20vw;
+        top: 19vh;
+        animation-name: startDropAnimation;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+    }
+
+    a {
+        position: absolute;
+        text-decoration: none;
+        left: 24vw;
+        top: 29vh;
+        background-color: red;
+        color: white;
+        font-size: 2.9vh;
+        padding: 15px 40px;
+        border-radius: 1.5vh;
+        
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 2px 20px;
+        }
+
+        &:active {
+            transform: translateY(-1px);
+        }
+    }
+}
+        
+@keyframes startDropAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
