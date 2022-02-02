@@ -8,7 +8,7 @@ import cars from "../../assets/content-like-data";
 const Shop = ()=>(
     <div className='shop'>
         {cars.map((car)=>(
-            <Card {...car}/>
+            <Card key={car.id} {...car}/>
         ))}
     </div>
 )
